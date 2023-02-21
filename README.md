@@ -36,7 +36,7 @@ yarn add axios
 
 ## ✒️ main.tsx, App.tsx, userSlice.ts, store.ts, useTypedSelector.ts, TypeBox.ts 수정 및작성
 ### :zap: main.tsx
-- `react-redux`에서 `Provider` 함수 가져온 후 `store.ts` 파일을 import 한 후 <Provider store={store}></Provider>으로 <App />을 둘러싸면 Redux-Toolkit 사용준비 완료.
+- `react-redux`에서 `Provider` 함수 가져온 후 `store.ts` 파일을 `import` 한 후 `<Provider store={store}></Provider>으로 <App />`을 둘러싸면 `Redux-Toolkit` 사용준비 완료.
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom/client'
@@ -54,8 +54,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 ```
 
 ### :zap: App.tsx
-- useDispatch, useSelector를 import 하여 사용한 후 state에 RootState를 타입으로 선언함.
-- useEffect를 통해 dispatch 값이 바뀔 때마다 함수가 실행되도록 작성함.
+- `useDispatch`, `useSelector`를 `import` 하여 사용한 후 `state`에 `RootState`를 타입으로 선언함.
+- `useEffect`를 통해 `dispatch` 값이 바뀔 때마다 함수가 실행되도록 작성함.
 ```js
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -89,7 +89,7 @@ export default function App() {
 
 ## ✒️ api.ts, index.ts, user.ts, store.ts, userSlice.ts 수정 및작성
 ### :zap: api.ts
-- fetch 함수를 통해 json 파일 정보를 가져온 뒤, 성공하면 남자 신발 데이터를. 실패하면 에러 메세지를 남기게 설정.
+- `fetch` 함수를 통해 `json` 파일 정보를 가져온 뒤, 성공하면 남자 신발 데이터를. 실패하면 에러 메세지를 남기게 설정.
 ```js
 import axios from "axios";
 
